@@ -14,19 +14,21 @@ Aplicação Prática: Servir como um material de referência rápida durante a e
 
 Para alimentar a base de conhecimento do NotebookLM e garantir respostas precisas, foram selecionados 5 materiais de referência técnica em formato PDF e texto aberto:
 
-Algoritmos e Estruturas de Dados: Documentação/PDF sobre lógica de programação, estruturas condicionais (if/else), laços de repetição (for/while) e funções.
+**AlgorithmsNotesForProfessionals:** Documentação/PDF sobre lógica de programação, estruturas condicionais (if/else), laços de repetição (for/while) e funções.
 
-Git & GitHub (Cheat Sheet Oficial): Guia de comandos práticos para controle de versão, abordando fluxos de trabalho locais (staging, commit, branch) e remotos (push, pull, merge).
+**GitNotesForProfessionals:** Guia de comandos práticos para controle de versão, abordando fluxos de trabalho locais (staging, commit, branch) e remotos (push, pull, merge).
 
-MongoDB Manual (NoSQL): Guia em PDF sobre bancos não relacionais, focado na sintaxe de operações CRUD e manipulação de documentos BSON/JSON.
+**MongoDBNotesForProfessionals (NoSQL):** Guia em PDF sobre bancos não relacionais, focado na sintaxe de operações CRUD e manipulação de documentos BSON/JSON.
 
-MySQL Reference Manual: Documentação sobre o banco relacional MySQL, focando na sintaxe de criação de tabelas, índices e tipos de dados nativos.
+**MySQLNotesForProfessionals Reference Manual:** Documentação sobre o banco relacional MySQL, focando na sintaxe de criação de tabelas, índices e tipos de dados nativos.
 
-SQL ANSI (Guia Padrão de Consultas): Material focado em comandos SQL padrão (SELECT, INSERT, UPDATE, DELETE, JOINs e funções de agregação) para consultas em bancos relacionais.
+**SQLNotesForProfessionals (Guia Padrão de Consultas):** Material focado em comandos SQL padrão (SELECT, INSERT, UPDATE, DELETE, JOINs e funções de agregação) para consultas em bancos relacionais.
+
+**PythonNotesForProfessionals:** Documentação e guia em PDF sobre a linguagem Python, focando em estruturas de dados, funções, sintaxe básica e recursos avançados para desenvolvimento.
 
 **Engenharia de Prompts e "Cicatrizes"**
 
-Nesta seção, documentamos como ajustamos os prompts no NotebookLM para extrair respostas precisas e operacionais a partir das fontes fornecidas.
+Nesta seção, está documentado como foram ajustados os prompts do NotebookLM para extrair respostas precisas e operacionais a partir das fontes fornecidas.
 
 Prompt Inicial (Testado): "Como fazer buscas em banco de dados e comandos no Git?"
 
@@ -34,7 +36,7 @@ Resultado Obtido: A IA misturou conceitos teóricos de bancos relacionais e não
 
 Cicatriz / Dificuldade: Respostas genéricas demais, sem código pronto para cópia rápida (copy-paste).
 
-Prompt Refinado (Estratégico): "Atue como um Guia Prático para Desenvolvedores. Com base estritamente nas fontes, crie um passo a passo em blocos de código com a sintaxe exata para: 1. Criar uma query SQL no MySQL com WHERE e ORDER BY; 2. Realizar a mesma consulta no MongoDB; 3. Commitar e enviar as alterações via Git."
+Prompt (Estratégico): "Atue como um Guia Prático para Desenvolvedores. Com base estritamente nas fontes, crie um passo a passo em blocos de código com a sintaxe exata para: 1. Criar uma query SQL no MySQL com WHERE e ORDER BY; 2. Realizar a mesma consulta no MongoDB; 3. Commitar e enviar as alterações via Git."
 
 Resultado Obtido: Respostas diretas no estilo Cookbook, separadas por sintaxe exata de cada tecnologia.
 
@@ -52,6 +54,9 @@ Bancos de Dados Relacionais (SQL / MySQL): Consultas estruturadas utilizando com
 
 Bancos de Dados Não Relacionais (MongoDB): Operações de CRUD em documentos JSON/BSON utilizando funções nativas (find(), insertOne(), updateMany(), deleteOne()).
 
+Linguagem Python: Fundamentos da linguagem, manipulação de estruturas de dados (listas, dicionários, tuplas), sintaxe básica, criação de funções e recursos avançados para desenvolvimento.
+
+
 **2. Um glossário com os principais conceitos aprendidos;**
 
 Algoritmo: Sequência finita de instruções lógicas estruturadas para resolver um problema.
@@ -64,6 +69,8 @@ Documento (NoSQL): Estrutura de armazenamento de dados flexível usada no MongoD
 
 Primary Key (PK): Chave única utilizada em bancos de dados relacionais para identificar um registro de forma exclusiva.
 
+Python: Linguagem de programação de alto nível, interpretada e com tipagem dinâmica, focada em legibilidade de código e versatilidade.
+
 **3. Um conjunto de prompts reutilizáveis que possam apoiar futuras revisões sobre o tema;**
 
 Prompt de Consulta Rápida (Syntax Lookup): "Mostre a sintaxe exata para [AÇÃO, ex: criar um índice] no [TECNOLOGIA, ex: MySQL] baseado nas fontes fornecidas."
@@ -71,3 +78,5 @@ Prompt de Consulta Rápida (Syntax Lookup): "Mostre a sintaxe exata para [AÇÃO
 Prompt Comparativo (SQL vs NoSQL): "Compare como a operação [AÇÃO] é realizada em SQL padrão versus MongoDB, listando as diferenças de sintaxe em formato de tabela."
 
 Prompt de Resolução de Erros (Debugging): "Quais são os erros mais comuns citados na fonte ao executar [COMANDO/CONCEITO] e qual é o passo a passo para solucioná-los?"
+
+Prompt de Idiomas e Funções em Python (Python Lookup): "Com base na documentação do Python, explique o funcionamento e forneça um exemplo prático da função ou estrutura [CONCEITO/FUNÇÃO, ex: list comprehension, decorators ou dict.get()]."
