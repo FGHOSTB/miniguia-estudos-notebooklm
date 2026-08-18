@@ -1,0 +1,35 @@
+Para configurar o NotebookLM com os arquivos (ou qualquer documento da sua curadoria de fontes) para uso no NotebookLM, siga este passo a passo:
+
+1. Preparar o Arquivo Fonte
+
+Certifique-se de que o arquivo em PDF do PythonNotesForProfessionals está salvo localmente no seu computador ou hospedado no seu Google Drive.
+
+2. Criar um Novo Bloco de Notas (Notebook)
+
+Acesse o NotebookLM e faça login com sua conta do Google.
+
+Na tela principal, clique no botão New Notebook (Novo Bloco de Notas).
+
+3. Adicionar as Fontes de Estudo (Sources)
+
+Na janela que se abre ("Add Sources"), escolha a opção desejada:
+
+Google Drive: para selecionar o PDF diretamente do seu Drive.
+
+File Upload: para fazer o upload do arquivo PDF salvo localmente no notebook.
+
+Text/Copied Text: se quiser colar trechos do texto diretamente.
+
+Selecione o PDF do PythonNotesForProfessionals e confirme a importação.
+
+4. Adicionar Fontes Complementares (Opcional)
+
+Clique no ícone de + (Add Source) no painel esquerdo para adicionar outras fontes da sua curadoria (como resumos em texto do Git, SQL, MongoDB ou arquivos markdown).
+
+5. Interagir e Gerar Conteúdo
+
+Guia da Fonte (Source Guide): O NotebookLM gerará automaticamente um resumo executivo e tópicos chave das fontes enviadas.
+
+Campo de Chat: Utilize a barra de prompt na parte inferior para inserir os seus prompts de estudo (ex: pedir para comparar conceitos de Python com SQL, extrair sintaxes específicas ou gerar resumos).
+
+Salvar Notas: Clique em Save to Note nas respostas geradas para criar blocos de anotações fixos no painel lateral do seu NotebookLM.
